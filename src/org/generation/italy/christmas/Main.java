@@ -14,7 +14,7 @@ public class Main {
 		String scelta = " ";
 
 		do {
-			System.out.println("Aggiungi un elemento alla lista dei desideri: ");
+			System.out.print("Aggiungi un elemento alla lista dei desideri: ");
 			listaDesideri.add(scanner.nextLine());
 			System.out.println("La tua lista contiene " + listaDesideri.size() + " desiderio");
 			System.out.print("Continuare? s/n ");
@@ -22,7 +22,10 @@ public class Main {
 		} while (scelta.equals("s"));
 
 		Collections.sort(listaDesideri);
-		System.out.println("Ecco la tua lista: " + listaDesideri);
+		System.out.println("Ecco la tua lista: ");
+		for (int i = 0; i < listaDesideri.size(); i++) {
+			System.out.println(listaDesideri.get(i));
+		}
 
 		System.out.print("Inserisci il tuo nome: ");
 		String nome = scanner.nextLine();
@@ -38,7 +41,5 @@ public class Main {
 		}
 
 		scanner.close();
-
 	}
-
 }

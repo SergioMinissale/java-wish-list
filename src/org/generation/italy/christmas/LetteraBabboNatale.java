@@ -14,7 +14,6 @@ public class LetteraBabboNatale {
 		this.nome = nome;
 		this.indirizzo = indirizzo;
 		this.listaDesideri = listaDesideri;
-
 	}
 
 	public String getNome() {
@@ -49,7 +48,5 @@ public class LetteraBabboNatale {
 			// errore
 			throw new Exception("Errore: la lunghezza massima di desideri consentita è di 5 desideri ");
 		}
-
 	}
-
 }
