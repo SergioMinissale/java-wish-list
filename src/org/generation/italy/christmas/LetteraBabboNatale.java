@@ -3,20 +3,20 @@ package org.generation.italy.christmas;
 import java.util.ArrayList;
 
 public class LetteraBabboNatale {
-	
+
 	// attributi
 	private String nome;
 	private String indirizzo;
 	private ArrayList<String> listaDesideri;
-	
+
 	// costruttore
 	public LetteraBabboNatale(String nome, String indirizzo, ArrayList<String> listaDesideri) {
 		this.nome = nome;
 		this.indirizzo = indirizzo;
 		this.listaDesideri = listaDesideri;
-		
+
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -43,13 +43,13 @@ public class LetteraBabboNatale {
 
 	// metodo
 	public String invia() throws Exception {
-		if(listaDesideri.size() <= 5) {
+		if (listaDesideri.size() <= 5) {
 			return nome + " " + indirizzo + " " + listaDesideri;
 		} else {
-			//errore
+			// errore
 			throw new Exception("Errore: la lunghezza massima di desideri consentita è di 5 desideri ");
 		}
-		
+
 	}
 
 }

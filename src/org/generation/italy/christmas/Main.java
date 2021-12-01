@@ -23,22 +23,22 @@ public class Main {
 
 		Collections.sort(listaDesideri);
 		System.out.println("Ecco la tua lista: " + listaDesideri);
-		
+
 		System.out.print("Inserisci il tuo nome: ");
 		String nome = scanner.nextLine();
-		
+
 		System.out.print("Inserisci il tuo indirizzo: ");
 		String indirizzo = scanner.nextLine();
-		
-		LetteraBabboNatale lettera= new LetteraBabboNatale(nome, indirizzo, listaDesideri);
+
+		LetteraBabboNatale lettera = new LetteraBabboNatale(nome, indirizzo, listaDesideri);
 		try {
 			System.out.println(lettera.invia());
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
+
 		scanner.close();
-	
+
 	}
 
 }
